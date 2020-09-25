@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.produto.ProdutoController">
+   <children>
+      <Label layoutX="55.0" layoutY="24.0" text="cod." />
+      <Label layoutX="55.0" layoutY="45.0" text="Nome" />
+      <Label layoutX="55.0" layoutY="109.0" text="Qtd" />
+      <Label layoutX="55.0" layoutY="139.0" text="Kg" />
+      <Label layoutX="55.0" layoutY="170.0" text="UltimaCompra" />
+      <Label layoutX="55.0" layoutY="200.0" text="UltimaVenda" />
+      <Label fx:id="campoId" layoutX="94.0" layoutY="24.0" text="valorVod" />
+      <TextField fx:id="campoNome" layoutX="94.0" layoutY="41.0" />
+      <TextField fx:id="campoQtd" layoutX="94.0" layoutY="105.0" />
+      <TextField fx:id="campoKg" layoutX="94.0" layoutY="135.0" />
+      <TextField fx:id="campoUC" layoutX="142.0" layoutY="166.0" prefHeight="25.0" prefWidth="101.0" />
+      <TextField fx:id="campoUV" layoutX="142.0" layoutY="196.0" prefHeight="25.0" prefWidth="101.0" />
+      <Button fx:id="btnNew" layoutX="50.0" layoutY="239.0" mnemonicParsing="false" onAction="#btnInserir" text="New" />
+      <Button fx:id="btnEdit" layoutX="98.0" layoutY="239.0" mnemonicParsing="false" onAction="#btnEdit" text="Edit" />
+      <Button fx:id="btnDelet" layoutX="143.0" layoutY="239.0" mnemonicParsing="false" onAction="#btnDelet" text="Delet" />
+      <TextArea fx:id="campoTabela" layoutX="255.0" layoutY="18.0" prefHeight="367.0" prefWidth="330.0" />
+      <Button fx:id="btnFind" layoutX="193.0" layoutY="239.0" mnemonicParsing="false" onAction="#btnFind" text="Find" />
+      <Button fx:id="btnRefresh" layoutX="50.0" layoutY="276.0" mnemonicParsing="false" onAction="#btnUpdate" text="Refresh" />
+      <Label layoutX="53.0" layoutY="76.0" text="ValorUnit." />
+      <TextField fx:id="campoVU" layoutX="113.0" layoutY="72.0" prefHeight="25.0" prefWidth="129.0" />
+   </children>
+</AnchorPane>
